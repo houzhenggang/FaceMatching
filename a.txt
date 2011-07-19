@@ -1,0 +1,26 @@
+      people GET    /people(.:format)          {:action=>"index", :controller=>"people"}
+             POST   /people(.:format)          {:action=>"create", :controller=>"people"}
+  new_person GET    /people/new(.:format)      {:action=>"new", :controller=>"people"}
+ edit_person GET    /people/:id/edit(.:format) {:action=>"edit", :controller=>"people"}
+      person GET    /people/:id(.:format)      {:action=>"show", :controller=>"people"}
+             PUT    /people/:id(.:format)      {:action=>"update", :controller=>"people"}
+             DELETE /people/:id(.:format)      {:action=>"destroy", :controller=>"people"}
+  play_games GET    /games/play(.:format)      {:action=>"play", :controller=>"games"}
+result_games GET    /games/result(.:format)    {:action=>"result", :controller=>"games"}
+       games GET    /games(.:format)           {:action=>"index", :controller=>"games"}
+             POST   /games(.:format)           {:action=>"create", :controller=>"games"}
+    new_game GET    /games/new(.:format)       {:action=>"new", :controller=>"games"}
+   edit_game GET    /games/:id/edit(.:format)  {:action=>"edit", :controller=>"games"}
+        game GET    /games/:id(.:format)       {:action=>"show", :controller=>"games"}
+             PUT    /games/:id(.:format)       {:action=>"update", :controller=>"games"}
+             DELETE /games/:id(.:format)       {:action=>"destroy", :controller=>"games"}
+  home_index GET    /home(.:format)            {:action=>"index", :controller=>"home"}
+             POST   /home(.:format)            {:action=>"create", :controller=>"home"}
+    new_home GET    /home/new(.:format)        {:action=>"new", :controller=>"home"}
+   edit_home GET    /home/:id/edit(.:format)   {:action=>"edit", :controller=>"home"}
+        home GET    /home/:id(.:format)        {:action=>"show", :controller=>"home"}
+             PUT    /home/:id(.:format)        {:action=>"update", :controller=>"home"}
+             DELETE /home/:id(.:format)        {:action=>"destroy", :controller=>"home"}
+        play        /play(.:format)            {:action=>"play", :controller=>"home"}
+      upload        /upload(.:format)          {:action=>"upload", :controller=>"home"}
+        root        /(.:format)                {:action=>"index", :controller=>"home"}

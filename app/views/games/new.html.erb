@@ -1,0 +1,12 @@
+Hello FaceMatch
+
+<%= image_tag @person.photo.url,:height => 100, :width => 100%>
+Whos pic this?
+<% form_tag result_games_path, :method => :get do%>
+  <%= hidden_field_tag 'person_id', @person.id%>
+<% @options.each do|o|%>
+ <%= radio_button_tag 'game_answer', o%>
+ <%= o%>
+<%end%>
+<%= submit_tag 'Submit'%>
+<%end%>
