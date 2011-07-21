@@ -13,7 +13,6 @@ gem 'mysql'
 # Deploy with Capistrano
 # gem 'capistrano'
 gem 'rspec-rails'
-gem 'rmagick'
 gem 'mongrel'
 gem 'paperclip','~> 2.3'
 

@@ -13,7 +13,11 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name %><br/>
+    Female
+    <%= f.radio_button :gender,'F'%>
+    Male
+    <%= f.radio_button :gender,'M'%>
   </div>
     <div>
       <%= f.file_field :photo %>
