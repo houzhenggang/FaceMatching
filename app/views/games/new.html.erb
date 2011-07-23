@@ -3,12 +3,14 @@ Hello FaceMatch
   <%= image_tag @person.photo.url(:thumb)%>
 </div>
 Whos pic this?
-<% form_tag result_games_path, :method => :get do%>
-  <%= hidden_field_tag 'person_id', @person.id%>
+<%# form_tag result_games_path, :method => :get do%>
+  <%#= hidden_field_tag 'person_id', @person.id%>
 <% @options.each do|o|%>
  <%= radio_button_tag 'game_answer', o%>
  <%= o%>
 <%end%>
 <br/>
-<%= submit_tag 'Submit'%>
-<%end%>
+<%= link_to 'Submit',result_games_path(:format => :js),{:id => 'show_result',:ref => @person.id}%>
+<%#end%>
+<br/>
+<%= link_to 'Play new game',new_game_path%>

@@ -6,6 +6,10 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql'
+gem 'barista'
+gem 'json'
+gem 'therubyracer', :require => nil  
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
