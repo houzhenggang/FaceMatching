@@ -10,6 +10,7 @@ jQuery(document).ready ->
         (data)-> 
           ans = if data.ans==true then 'right' else 'wrong'
           alert("Your are "+ans)
+          window.location='/games/new'
       ) 
     return false
     

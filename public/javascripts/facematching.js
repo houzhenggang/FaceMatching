@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 23 Jul 2011 07:04:30 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 23 Jul 2011 17:47:24 GMT from
  * /home/rashmi/FaceMatching/app/coffeescripts/facematching.coffee
  */
 
@@ -14,7 +14,8 @@
         }, function(data) {
           var ans;
           ans = data.ans === true ? 'right' : 'wrong';
-          return alert("Your are " + ans);
+          alert("Your are " + ans);
+          return window.location = '/games/new';
         });
       }
       return false;
