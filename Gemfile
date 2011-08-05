@@ -10,6 +10,7 @@ gem 'barista'
 gem 'json'
 gem 'therubyracer', :require => nil  
 gem 'jquery-rails'
+gem 'errorapp_notifier'
 
 # Use unicorn as the web server
 # gem 'unicorn'
