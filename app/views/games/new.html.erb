@@ -1,4 +1,5 @@
 Hello FaceMatch
+<%unless @person.blank?%>
 <div>
   <%= image_tag @person.photo.url(:thumb)%>
 </div>
@@ -14,3 +15,6 @@ Whos pic this?
 <%#end%>
 <br/>
 <%= link_to 'Play new game',new_game_path%>
+<%else%>
+  There is no Photograph Upload new <%= link_to 'Upload',new_person_path%>
+<%end%>

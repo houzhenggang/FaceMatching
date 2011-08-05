@@ -5,7 +5,7 @@ class Person < ActiveRecord::Base
     temp   = Person.all.reject{|p| p.name == person.name || p.gender!=person.gender}
     temp  =  temp.map{|p|p.name}
     options = temp.randomly_pick(3)
-    options << person.name
+    options << person.try(:name)
     options = options.shuffle
     options
   end
