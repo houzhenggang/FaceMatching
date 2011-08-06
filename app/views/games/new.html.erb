@@ -1,7 +1,7 @@
-Hello FaceMatch
+
 <%unless @person.blank?%>
 <div>
-  <%= image_tag @person.photo.url(:thumb)%>
+  <%= image_tag @person.photo.url(:medium)%>
 </div>
 Whos pic this?
 <%# form_tag result_games_path, :method => :get do%>

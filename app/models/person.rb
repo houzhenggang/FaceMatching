@@ -1,5 +1,5 @@
 class Person < ActiveRecord::Base
-  has_attached_file :photo,:styles => {:thumb => '100x100'}
+  has_attached_file :photo,:styles => {:thumb => '100x100',:medium => '300x300'}
   
   def self.option_names(person)
     temp   = Person.all.reject{|p| p.name == person.name || p.gender!=person.gender}
