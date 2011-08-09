@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %><br/>
+    <%= f.label :name %>
+    <%= f.text_field :name ,:size => 20%><br/>
     Female
     <%= f.radio_button :gender,'F'%>
     Male
@@ -23,7 +23,8 @@
       <%= f.file_field :photo %>
     </div>
   
-  <div class="actions">
-    <%= f.submit %>
+  <div>
+    <%= f.submit 'Submit',:class => 'cse_button' %>
+    <%= link_to 'Back', home_index_path ,:class => 'button' %>
   </div>
 <% end %>

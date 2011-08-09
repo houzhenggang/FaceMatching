@@ -46,4 +46,5 @@ AppdevFacematch::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  Paperclip.options[:command_path] = "109.107.37.190/projects/shared/facematching_photos"
 end
