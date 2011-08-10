@@ -1,4 +1,5 @@
 class Person < ActiveRecord::Base
+  validates_presence_of :name, :gender, :photo_file_name
   has_attached_file :photo,:styles => {:thumb => '100x100',:medium => '300x300'}
   
   def self.option_names(person)
