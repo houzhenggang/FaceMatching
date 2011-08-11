@@ -58,7 +58,7 @@ div.field, div.actions {
 }
 .main_content{
   margin-left: 300px;
-  width: 372px;
+  width: 500px;
   margin-top: 70px;
 }
 
@@ -66,7 +66,7 @@ div.field, div.actions {
 .home_link{margin-top: 12px; margin-left: 274px}
 .button {
   margin: 0.7em 0.5em 0.7em 0;
-  padding: 7px 10px 6px 7px;
+  padding: 5px 10px 6px 7px;
   border: 1px solid #DEDEDE;
   border-top: 1px solid #EEE;
   border-left: 1px solid #EEE;
@@ -112,10 +112,10 @@ div.field, div.actions {
   padding-right:20px;
 }
 h1{font-size:18px;}
-form{
-  border: 2px dashed #006699;
-  padding:15px;
-}
+
 form.new_person label{
   padding-right:40px;
 }
+.outer_div{border: 2px dashed #006699; padding:15px;}
+.image_div{}
+

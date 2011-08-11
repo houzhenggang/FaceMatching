@@ -1,20 +1,22 @@
-
+<div class='outer_div'>
 <%unless @person.blank?%>
-<div>
-  <%= image_tag @person.photo.url(:medium)%>
+  <div class ="image_div">
+    <%= image_tag @person.photo.url(:medium),:width => '465px'%>
+  </div>
+  Whos pic this?<br/>
+ 
+  <% @options.each do|o|%>
+    <%= radio_button_tag 'game_answer', o%>
+    <%= o%>
+  <%end%>
+  <br/>
+ <div style="margin-top:15px;">
+  <%= link_to 'Submit',result_games_path(:format => :js),
+    {:id =>'show_result',:ref =>@person.id,:class => 'button'}%>
+
+  <%= link_to 'Play new game',new_game_path,:class => 'button'%>
 </div>
-Whos pic this?
-<%# form_tag result_games_path, :method => :get do%>
-  <%#= hidden_field_tag 'person_id', @person.id%>
-<% @options.each do|o|%>
- <%= radio_button_tag 'game_answer', o%>
- <%= o%>
-<%end%>
-<br/>
-<%= link_to 'Submit',result_games_path(:format => :js),{:id => 'show_result',:ref => @person.id}%>
-<%#end%>
-<br/>
-<%= link_to 'Play new game',new_game_path%>
 <%else%>
-  There is no Photograph Upload new <%= link_to 'Upload',new_person_path%>
+  There is no Photograph Upload new <%= link_to 'Upload',new_person_path,:class => 'button'%>
 <%end%>
+</div>
