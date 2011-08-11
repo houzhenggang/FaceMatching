@@ -6,7 +6,7 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
-body{background-color:pink;}
+body{background-color:white;}
 
 pre {
   background-color: #eee;
@@ -63,10 +63,10 @@ div.field, div.actions {
 }
 
 .heading{font-size: 40px;text-align: center;}
-.home_link{margin-top: 12px; margin-left: 80px}
+.home_link{margin-top: 12px; margin-left: 274px}
 .button {
   margin: 0.7em 0.5em 0.7em 0;
-  padding: 5px 10px 5px 7px;
+  padding: 7px 10px 6px 7px;
   border: 1px solid #DEDEDE;
   border-top: 1px solid #EEE;
   border-left: 1px solid #EEE;
@@ -77,11 +77,11 @@ div.field, div.actions {
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
+  color: #006699 !important;
   border-top-left-radius: 5px 5px;
   border-top-right-radius: 5px 5px;
   border-bottom-right-radius: 5px 5px;
   border-bottom-left-radius: 5px 5px;
-  top: 6px;
   position: relative;
 
 }
@@ -104,7 +104,18 @@ div.field, div.actions {
   border-bottom-left-radius: 5px 5px;
   color: #006699;
   margin-bottom: 6px;
+  margin-top:15px;
 
 }
 .content_div{
+  width:500px;
+  padding-right:20px;
+}
+h1{font-size:18px;}
+form{
+  border: 2px dashed #006699;
+  padding:15px;
+}
+form.new_person label{
+  padding-right:40px;
 }
